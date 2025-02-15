@@ -14,7 +14,7 @@ function MainContent() {
       <button onClick={toggleHelp}>{helpVisible ? 'Hide' : 'Show'} Help</button>
       {helpVisible && <HelpArea />}
     </main>
-  );
+  )
 }
 
 export default MainContent;
