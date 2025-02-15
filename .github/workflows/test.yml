@@ -11,9 +11,8 @@ jobs:
         with:
           node-version: 18
       - name: Change dir
-        run: cd "Code/02 Basics/02 Starting Project/"
-      - name: install npm
-        run: npm install
-      - name: Run tests
-        run: npm test
+        run: |
+          cd "Code/02 Basics/02 Starting Project/"
+          npm install
+          npm test
           
