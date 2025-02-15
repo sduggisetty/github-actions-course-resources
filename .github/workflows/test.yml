@@ -1,0 +1,19 @@
+name: Test npm project
+on: [workflow_dispatch]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Code
+        uses: actions/checkout@v4
+      - name: install nodejs
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Change dir
+        run: cd "Code/02 Basics/02 Starting Project/"
+      - name: install npm
+        run: npm ci
+      - name: Run tests
+        run: npm test
+          
