@@ -13,6 +13,6 @@ jobs:
       - name: Change dir
         run: |
           cd "Code/02 Basics/02 Starting Project/"
-          npm install
+          npm ci
           npm test
           
