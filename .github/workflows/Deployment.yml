@@ -1,4 +1,4 @@
-name: Test npm project
+name: My npm project
 on: [workflow_dispatch]
 jobs:
   test:
@@ -17,6 +17,7 @@ jobs:
           npm test
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Get Code
         uses: actions/checkout@v4
